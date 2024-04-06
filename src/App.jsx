@@ -5,7 +5,7 @@ import Form from "./components/Form";
 import Card from "./components/Card";
 import Map from "./components/Map";
 import axios from "axios";
-import Logo from "../public/icon.svg";
+import Logo from "/icon.svg";
 
 function App() {
 	const [value, setValue] = useState("");
