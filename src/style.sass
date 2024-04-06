@@ -14,6 +14,7 @@ body
   width: 100%
   height: 100vh
   background: black
+  overflow: hidden
 
 header
   background-image: url("./assets/pattern-bg-mobile.png")
@@ -26,6 +27,7 @@ header
   align-items: center
   padding: 2rem 0rem
   gap: 2rem
+  position: relative
 
 .form
   width: 80%
@@ -55,6 +57,9 @@ header
       filter: invert(100%)
 
 .card
+  position: absolute
+  z-index: 10000
+  bottom: -125px
   display: flex
   width: 80%
   flex-direction: column
@@ -69,10 +74,19 @@ header
     color: $VeryDarkGray
     font-size: large
 
+#map
+  height: 100vh
+  p
+    font-size: 2rem
+//! Sizing the map 
+.leaflet-container
+  height: 100%
+
 @include tablet
   .form
     font-size: 1.5rem
   .card
+    bottom: -100px
     display: grid
     grid-template-columns: 1fr 1fr
     gap: 2rem
@@ -82,6 +96,7 @@ header
     background-image: url("./assets/pattern-bg-desktop.png")
     gap: 4rem
   .card
+    bottom: -100px
     display: flex
     flex-direction: row
     width: 70%

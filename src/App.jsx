@@ -3,6 +3,7 @@ import "./style.sass";
 import { Fragment } from "react";
 import Form from "./components/Form";
 import Card from "./components/Card";
+import Map from "./components/Map";
 
 function App() {
 	return (
@@ -12,7 +13,7 @@ function App() {
 				<Form />
 				<Card />
 			</header>
-			<main></main>
+			<Map />
 			<footer></footer>
 		</Fragment>
 	);
